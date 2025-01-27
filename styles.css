@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #26262E;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5% 15px 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 100px;
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #ffffff;
+  color: #00854D;
+}
+
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.language-select:hover {
+  color: #0073e6;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff007a;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.talk-button {
+  background-color: #00854D;
+  color: #fff;
+  padding: 16px 35px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.talk-button:hover {
+  background-color: #006400;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.carousel {
+  position: relative;
+  height: 700px;
+  background-image: url("MIG\ Assets/carosuel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  align-items: flex-start;
+  text-align: justify;
+  padding: 20px;
+  z-index: 2;
+  width: 590px;
+
+}
+
+.carousel h2 {
+  font-size: 48px;
+  color: #F8F8F9;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 54px;
+  margin-bottom: 10px;
+}
+
+.carousel p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #DDDEDF;
+}
+
+.carousel button {
+  padding: 14px 20px;
+  font-size: 1rem;
+  background-color: #00854D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel button:hover {
+  background-color: #006400;
+}
+
+.trending {
+  padding: 0.2% 4% 4% 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.trending-h3 {
+  /* margin-top: 2px; */
+  padding: 3% 4% 0% 4%;
+  font-size: 30px;
+  color: #F8F8F9;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+.trendings-card {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  width: 31%;
+  min-height: 300px;
+}
+
+.trendings-card h4 {
+  color: #DDDEDF;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 26px;
+  margin: 15px 0px 15px 0px;
+}
+
+.trendings-card p {
+  color: #B3B7BD;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 20px;
+
+}
+
+.trendings-card button {
+  padding: 14px 20px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  border-color: #fff;
+  margin: 15px 0px 15px 0px;
+  border-width: 1;
+  cursor: pointer;
+  width: 160px;
+}
+
+.trendings-card button:hover {
+  background-color: #006400;
+}
+
+.trending-bg {
+  background-color: #006400;
+  display: flex;
+  width: 100%;
+}
+
+.explore {
+  background-color: #fff;
+}
+
+.energy {
+  padding: 0.2% 1% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.explore h3 {
+  padding: 3% 4% 0% 4%;
+  font-size: 30px;
+  color: #0E0D35;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.energy-sec {
+  display: flex;
+  width: 94%;
+  height: 200px;
+  /* text-align: justify; */
+  justify-content: space-between;
+
+}
+
+.energy-sec h4 {
+  color: #27264A;
+  margin-bottom: 8px;
+
+}
+
+.energy-sec p {
+  color: #807f88;
+  margin-bottom: 8px;
+  line-height: 20px;
+  font-size: 14px;
+
+
+}
+
+.energy-sec button {
+  border: none;
+  background-color: #fff;
+  color: #006400;
+  font-weight: 600;
+}
+
+.energy-sec img {
+  margin-left: 10px;
+  /* width: 100%; */
+  /* width: 300px; */
+}
+
+.div-line {
+  width: 6%;
+  display: flex;
+}
+
+.introducing {
+  background-color: #0071AC;
+  display: flex;
+  padding: 0.2% 2.5% 2% 4%;
+  flex-direction: row;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introducing-content {
+  width: 720px;
+  margin-top: 15px;
+}
+
+.introducing h4 {
+  line-height: 47px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #F8F8F9;
+  margin-bottom: 10px;
+}
+
+.introducing p {
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #DDDEDF;
+  margin-bottom: 10px;
+}
+
+.introducing button {
+  padding: 10px 0px;
+  font-size: 12px;
+  background-color: white;
+  color: #0071AC;
+  font-weight: 500;
+  align-items: center;
+  margin: 15px 10px 15px 10px;
+  border: none;
+  align-self: center;
+  width: 130px;
+
+}
+
+.our-services {
+  padding: 0.2% 2% 2% 4%;
+  align-items: center;
+}
+
+.our-services img {
+  width: 32%;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.insights {
+  padding: 0.2% 3% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.insights-card {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  width: 31%;
+  min-height: 300px;
+}
+
+.insights-card h4 {
+  color: #27264A;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 26px;
+  margin: 15px 0px 15px 0px;
+}
+
+.insights-card p {
+  color: #B3B7BD;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 20px;
+}
+
+.insights-card button {
+  background-color: #00854D;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.talk-button:hover {
+  background-color: #006400;
+}
+
+.content-us {
+  background-color: #0071AC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-us-context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5%;
+  width: 43%;
+  text-align: center;
+}
+
+.content-us h3 {
+  line-height: 47px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #F8F8F9;
+  margin-bottom: 8px;
+}
+
+.content-us p {
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #DDDEDF;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  display: flex;
+  background-color: #fff;
+  padding: 3% 4% 0% 4%;
+  flex-direction: column;
+
+}
+
+.footer-div {
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+}
+
+.logo-part {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo-part p {
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #626C7A;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+}
+
+.logo-end img {
+  height: 70px;
+  margin-right: 100px;
+
+}
+
+.share-part {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: ce; */
+  justify-content: space-between;
+
+}
+
+.nav-bar2 {
+  justify-content: space-between;
+  display: flex;
+  /* background-color: red; */
+}
+
+.footer-nav {
+  display: inline;
+  font-weight: 600;
+  font-size: 13px;
+  color: #3E3D5D;
+  line-height: 19px;
+}
+.footer-nav:hover {
+  color: #006400;
+}
+
+.share-row{
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-start;
+  justify-content:flex-start
+}
+.share-row-one{
+  align-self:center;
+  align-items: flex-start;
+  justify-content:flex-start
+  
+}
+.share-row img{
+  width: 30px;
+  align-self: flex-end;
+  margin: 4px;
+  margin-bottom: 0;
+  
+}
+
+.copy-txt {
+  display: flex;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #626C7A;
+  border-top: 1px solid #3E3D5D;
+  padding: 10px 10px;
+}
+
+.share-row button {
+  background-color: #00854D;
+  color: #fff;
+  padding: 11px 21px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  margin: 20px;
+ margin-right: 0px;
+}
