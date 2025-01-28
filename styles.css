@@ -5,8 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #26262E;
+  
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #26262E;;
 }
 
 .header {
@@ -21,7 +24,7 @@ body {
 
 .logo img {
   height: 50px;
-  margin-right: 100px;
+  margin-right: 50px;
 
 }
 
@@ -32,7 +35,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #4f4f4f;
   font-size: 16px;
   font-weight: 500;
   align-items: center;
@@ -55,7 +58,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   cursor: pointer;
   margin-right: 5px;
@@ -75,13 +78,18 @@ body {
 }
 
 .talk-button {
+  align-items: center;
+  gap: 2px;
   background-color: #00854D;
   color: #fff;
-  padding: 16px 35px;
+  padding: 16px 21px;
   font-size: 14px;
-  font-weight: bold;
-  border: none;
+  font-weight: normal;
+  text-align: center;
+  display: flex;
   cursor: pointer;
+  border: none;
+  
 }
 
 .talk-button:hover {
@@ -111,8 +119,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
   z-index: 1;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.02%, rgba(0, 0, 0, 0.75) 99.98%);
 }
 
 .carousel-content {
@@ -129,11 +138,13 @@ body {
 
 }
 
-.carousel h2 {
+.carousel h3 {
   font-size: 48px;
   color: #F8F8F9;
-  font-weight: 500;
-  font-family: inherit;
+  font-weight: 400;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 54px;
   margin-bottom: 10px;
 }
@@ -147,14 +158,19 @@ body {
 }
 
 .carousel button {
+  display: flex;
   padding: 14px 20px;
   font-size: 1rem;
   background-color: #00854D;
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
   transition: background-color 0.3s;
+  gap: 5px;
 }
+
 
 .carousel button:hover {
   background-color: #006400;
@@ -171,7 +187,7 @@ body {
 .trending-h3 {
   /* margin-top: 2px; */
   padding: 3% 4% 0% 4%;
-  font-size: 30px;
+  font-size: 25px;
   color: #F8F8F9;
   font-weight: 500;
   font-family: inherit;
@@ -187,10 +203,10 @@ body {
   min-height: 300px;
 }
 
-.trendings-card h4 {
+.trendings-card h6 {
   color: #DDDEDF;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   font-family: inherit;
   line-height: 26px;
   margin: 15px 0px 15px 0px;
@@ -206,11 +222,14 @@ body {
 }
 
 .trendings-card button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   padding: 14px 20px;
   font-size: 1rem;
   background-color: transparent;
   color: white;
-  border-color: #fff;
+  border: 1.5px solid #ffffff ;
   margin: 15px 0px 15px 0px;
   border-width: 1;
   cursor: pointer;
@@ -280,10 +299,22 @@ body {
 }
 
 .energy-sec button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   border: none;
-  background-color: #fff;
+  background-color:#fff;
   color: #006400;
   font-weight: 600;
+}
+
+
+.energy-sec img{
+  margin-left: -30px;
+}
+.energy-sec .arrow-icon{
+  color: #006400;
+
 }
 
 .energy-sec img {
@@ -300,9 +331,9 @@ body {
 .introducing {
   background-color: #0071AC;
   display: flex;
-  padding: 0.2% 2.5% 2% 4%;
+  padding: 8% 2.5% 8% 4%;
   flex-direction: row;
-  height: 150px;
+  height: 180px;
   align-items: center;
   justify-content: space-between;
 }
@@ -329,8 +360,11 @@ body {
 }
 
 .introducing button {
-  padding: 10px 0px;
-  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  align-items:center;
+  padding: 10px 10px;
+  font-size: 14px;
   background-color: white;
   color: #0071AC;
   font-weight: 500;
@@ -339,6 +373,7 @@ body {
   border: none;
   align-self: center;
   width: 130px;
+  padding-left: 30px;
 
 }
 
@@ -363,7 +398,6 @@ body {
 
 .insights-card {
   display: flex;
-  text-align: justify;
   flex-direction: column;
   width: 31%;
   min-height: 300px;
@@ -386,7 +420,29 @@ body {
   line-height: 20px;
 }
 
+.img-calender {
+  width: 15px;
+  
+}
+
+.calender-row{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+
+.text-line{
+  width: 1px;
+  height: 17px;
+  background: #E6E5E5;
+}
+
 .insights-card button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background-color: #00854D;
   color: #fff;
   padding: 14px 28px;
@@ -404,6 +460,7 @@ body {
 }
 
 .content-us {
+  height: 250px;
   background-color: #0071AC;
   display: flex;
   align-items: center;
@@ -494,7 +551,11 @@ body {
   font-size: 13px;
   color: #3E3D5D;
   line-height: 19px;
+  /* border-bottom: 1px bold #3E3D5D ; */
+  border-color: #3E3D5D;
+  text-decoration: underline solid 0.5px;
 }
+
 .footer-nav:hover {
   color: #006400;
 }
@@ -525,14 +586,16 @@ body {
   font-size: 12px;
   font-weight: 400;
   color: #626C7A;
-  border-top: 1px solid #3E3D5D;
+  border-top: 0.8px solid #DDDEDF;
   padding: 10px 10px;
 }
 
 .share-row button {
+  display: flex;
+  align-items: flex-end;
   background-color: #00854D;
   color: #fff;
-  padding: 11px 21px;
+  padding: 14px 10px;
   font-size: 14px;
   font-weight: 500;
   border: none;
@@ -540,4 +603,17 @@ body {
   cursor: pointer;
   margin: 20px;
  margin-right: 0px;
+ justify-content: center;
+ padding-left:20px ;
+}
+
+.brochure-btn{
+  position: relative;
+  left: -6px;
+  width: 12px;
+  height: 18px;
+  padding: 0px;
+  
+  
+ 
 }
